@@ -1,0 +1,78 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1.5rem;
+  font-weight: 600;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0 0.8rem;
+  transition: opacity 0.3s ease;
+}
+
+.navbar a:hover {
+  opacity: 0.8;
+}
+
+.navbar-left,
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar button {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.navbar button:hover {
+  opacity: 0.8;
+}
+
+
+.navbar-home {
+  background-color: #333;
+  color: white;
+}
+
+.navbar-income {
+  background-color: #001f9b;
+  color: white;
+}
+
+.navbar-expense {
+  background-color: #be0101;
+  color: white;
+}
+
+.navbar-edit {
+  background-color: #800000;
+  color: white;
+}
+
+
+@media (max-width: 599px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .navbar-left,
+  .navbar-right {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0.5rem 0;
+  }
+
+  .navbar a {
+    margin: 0.4rem 0.6rem;
+  }
+  
+}
+
